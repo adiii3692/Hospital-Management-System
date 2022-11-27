@@ -1,6 +1,6 @@
 # HowYouDoin
 
-##Tech Used;
+##Tech Used:
 1.Python(Flask)
 1.HTML
 1.CSS
