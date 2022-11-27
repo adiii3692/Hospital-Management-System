@@ -52,6 +52,11 @@ pip3 install Flask_session
 ```
 pip3 install Werkzeug
 ```
+* After installing the necessary libraries, the user needs to go back to the code editor and open the terminal in the directory in which the files are located. After starting the terminal the user needs to type in the following command to start a server and click on the link which will be provided:
+
+```
+flask run
+```
 
 ## Credits
 * The icon was taken from [favicon](https://favicon.io/)
