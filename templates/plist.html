@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Patient List
+{% endblock %}
+
+{% block a %}
+    <a class="nav-link white" href="/logout">Logout</a>
+{% endblock %}
+
+{% block main %}
+    <h1>List of registered patients</h1>
+    <table class="table white">
+        <thead>
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contact Number</th>
+            <th scope="col">Password</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            <tr>
+                <td>{{i["fname"]}}</td>
+                <td>{{i["lname"]}}</td>
+                <td>{{i["mail"]}}</td>
+                <td>{{i["contact"]}}</td>
+                <td>{{i["password"]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+{% endblock %}

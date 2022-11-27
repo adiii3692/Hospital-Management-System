@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block a %}
+    <a class="nav-link white" href="/logout">Logout</a>
+{% endblock %}
+
+{% block main %}
+    <h1>Hello {{user}}</h1><br>
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <a href="/dview"><button type="button" class="btn btn-outline-primary white">View Apointments</button></a>
+    </div>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Doctor
+{% endblock %}
+
+{% block a %}
+    <a class="nav-link white" href="/logout">Logout</a>
+{% endblock %}
+
+{% block main %}
+    <h1>Add A Doctor</h1>
+    <form action="/add" method="post">
+        <div class="row">
+            <div class="col">
+                <input type="text" id="first name" class="form-control" placeholder="First name" aria-label="First name" name="fname"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" id="last name" class="form-control" placeholder="Last name" aria-label="Last name" name="lname"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="password" class="form-control" name="password" placeholder="Password"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="password" class="form-control" name="confirmation" placeholder="Password(Again)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" name="email" placeholder="Email ID"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="display: flex; justify-content: center;">
+                <input type="submit" class="btn btn-info">
+            </div>
+        </div>
+    </form>
+{% endblock %}
+

@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <h1>Register as a patient</h1>
+    <form action="/pregister" method="post">
+        <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="firstName">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="lastName"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Email ID" aria-label="Email ID" name="email">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Contact" aria-label="Contact Number" name="contact"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <div class="col">
+                <input type="password" class="form-control" name="confirmation" placeholder="Password(Again)"><br>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col" style="display: flex; justify-content: center;">
+                <input type="submit" class="btn btn-info">
+            </div>
+        </div>
+    </form>
+{% endblock %}
+

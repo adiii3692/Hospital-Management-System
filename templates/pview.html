@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Appointment History
+{% endblock %}
+
+{% block a %}
+    <a class="nav-link white" href="/logout">Logout</a>
+{% endblock %}
+
+{% block main %}
+    <h1>Appointment History</h1>
+    <table class="table white">
+        <thead>
+          <tr>
+            <th scope="col">Doctor</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for i in row %}
+            <tr>
+                <td>{{i["doctor"]}}</td>
+                <td>{{i["date"]}}</td>
+                <td>{{i["time"]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+{% endblock %}
+

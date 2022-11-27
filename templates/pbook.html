@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Book Apointment
+{% endblock %}
+
+{% block a %}
+    <a class="nav-link white" href="/logout">Logout</a>
+{% endblock %}
+
+{% block main %}
+    <h1>Book An Appointment</h1><br>
+    <form action="/pbook" method="post">
+        <div class="row">
+            <div class="col">
+                <label for="doctor">DOCTORS: </label>
+                <select name="doctor" id="doctor">
+                    <option selected="selected" disabled>Doctor</option>
+                    {% for i in fullNames %}
+                    <option>{{i}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="date">DATE(YYYY-MM-DD): </label>
+                <input type="date" id="date" name="date" min="2022-11-25" max="2024-12-31">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="time">TIME: </label>
+                <input type="time" id="time" name="time" min="06:00" max="18:00">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col" style="display: flex; justify-content: center;">
+                <input type="submit" class="btn btn-info">
+            </div>
+        </div>
+    </form>
+{% endblock %}

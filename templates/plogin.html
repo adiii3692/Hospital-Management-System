@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+    <h1>Patient Login</h1>
+    <form action="/plogin" method="post">
+        <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Email ID" aria-label="Email ID" name="email">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Password" aria-label="Password" name="password"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="display: flex; justify-content: center;">
+                <input type="submit" class="btn btn-info">
+            </div>
+        </div>
+    </form>
+{% endblock %}
+

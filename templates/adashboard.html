@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block a %}
+    <a class="nav-link white" href="/logout">Logout</a>
+{% endblock %}
+
+{% block main %}
+<h1>Hello admin</h1><br>
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <a href="/dlist"><button type="button" class="btn btn-outline-primary white">Doctor List</button></a>
+        <a href="/plist"><button type="button" class="btn btn-outline-primary white">Patient List</button></a>
+        <a href="/vapp"><button type="button" class="btn btn-outline-primary white">View Appointments</button></a>
+        <a href="/add"><button type="button" class="btn btn-outline-primary white">Add Doctors</button></a>
+    </div>
+{% endblock %}
