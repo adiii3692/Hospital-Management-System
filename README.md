@@ -23,6 +23,12 @@ This project is a simple hospital management system inspired by the famous ficti
 * The admin can view the list of registred doctors
 * The admin can view the list of all appointments
 * The admin can also register a new doctor using the details the doctor provides them with
+```
+admin username: admin
+```
+```
+admin password: admin123
+```
 
 ## How to install?
 * It is recommended to open all the files in a code editor such as VS Code or Sublime Text
