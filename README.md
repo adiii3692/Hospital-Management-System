@@ -9,16 +9,16 @@
 ## Description:
 This project is a simple hospital management system inspired by the famous fictional character Dr.Drake Ramoray ;) The user can log in as either a doctor, a patient or an admin, with each having different features.
 
-1. Patient Features:
+### Patient Features:
 * A patient can login if they are registered, or else create an account by registering.
 * After logging in, the patient can book an appointment with a specific doctor at a specific date and time
 * The patient can also view their appointment history
 
-1. Doctor Features:
+### Doctor Features:
 * A doctor can login using the email id and password they registered with. The registration can however only be done by the admin
 * After logging in, the doctor can view their appointments
 
-1. Admin Features:
+### Admin Features:
 * The admin can view the list of registered patients
 * The admin can view the list of registred doctors
 * The admin can view the list of all appointments
