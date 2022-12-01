@@ -57,6 +57,10 @@ pip3 install Werkzeug
 ```
 flask run
 ```
+## Main Files
+1. app.py: Python file that utilises flask library to run the backend
+1. patients.db: SQLITE database that stores the deatails of the patients, doctors and appointments made
+1. helpers.py: Python file that contains helpful functions 
 
 ## Credits
 * The icon was taken from [favicon](https://favicon.io/)
